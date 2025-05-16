@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar un gasto</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <h2>Agregar gasto</h2>
+
+    <form id="expense-form">
+        <label>Descripción:
+            <input type="text" id="description" required>
+        </label><br>
+
+        <label>Monto:
+            <input type="number" id="amount" required>
+        </label><br>
+
+        <label>Categoría:
+            <select id="category" required>
+                <option value="Comida">Comida</option>
+                <option value="Transporte">Transporte</option>
+                <option value="Ocio">Ocio</option>
+                <option value="Otros">Otros</option>
+            </select>
+        </label><br><br>
+
+        <button type="submit">Agregar gasto</button>
+    </form>
+
+    <h3>Lista de gastos</h3>
+    <table id="expense-table">
+        <thead>
+            <tr>
+                <th>Descripción</th>
+                <th>Monto</th>
+                <th>Categoría</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <h3 class="total">Total: $0.00</h3>
+
+   <script src="app.js"></script>
+</body>
+
+</html>
